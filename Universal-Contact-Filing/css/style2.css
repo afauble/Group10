@@ -1,7 +1,7 @@
 /* Adjust properties of the body*/
 body 
 {
-    background: url(../images/background.png) no-repeat center center fixed;   
+    background: url(../images/background.png) no-repeat bottom right fixed;   
     background-size: cover;
     color: white; /* Dark Mode by default */
 }
@@ -9,15 +9,35 @@ body
 /* Adjust properties of the heading */
 .ucf-heading
 {
-    margin-top: 15px;
-    margin-bottom: -120px;
+    font-size: 30px;
+    /*margin-top: -9px;*/
 }
 
-.row
+/* adjust properties of the search bar */
+#searchbar
 {
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: -30px;
-    margin-left: auto;
-    margin-right: auto;
+    /*width: 300px;*/
+}
+
+/* Adjust properties of button */
+.btn
+{
+    color: black;
+    border-radius: 5px;
+    border: 2px solid black;
+    border-bottom: 5px solid;
+}
+
+.btn:hover, .btn:focus
+{
+    color: black;
+    background-color: rgb(160, 142, 69);
+}
+
+/* Add UCF Knights Font*/
+@font-face
+{
+    font-family: ucffont;
+    src: url(../fonts/ncaaucfknights.ttf);
+    font-size: 24px;
 }
