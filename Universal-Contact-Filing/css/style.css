@@ -14,9 +14,19 @@ body
 */
 
 /* Adjust properties of the heading */
+.ucf-heading
+{
+    margin-top: 15px;
+    margin-bottom: -120px;
+}
+
 .row
 {
     text-align: center;
+    font-size: 50px;
+    margin-bottom: -30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Adjust properties of the login box */
