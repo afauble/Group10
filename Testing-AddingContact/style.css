@@ -1,0 +1,12 @@
+ul {
+    list-style: none;
+}
+
+.CreateContactForm{
+    display: inline-block;
+    text-align: center;
+}
+
+header {
+    margin-left: 20px;
+}
