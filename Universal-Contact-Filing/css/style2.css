@@ -7,31 +7,110 @@ body
 }
 
 /* Adjust properties of the heading */
-.ucf-heading
+.ucfheading
 {
-    font-size: 30px;
-    /*margin-top: -9px;*/
+    padding-top: 43px;
+    padding-left: 3px;
 }
+
+.ucftext
+{
+    font-family: ucffont; 
+    color: rgb(184, 164, 105); 
+    font-size: 50px;
+}
+
+.normaltext
+{
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+
+/* Adjust properties of the nav bar */
 
 /* adjust properties of the search bar */
 #searchbar
 {
-    /*width: 300px;*/
+    color: white; 
+    background-color: rgb(47, 47, 47); 
+    border:rgb(47, 47, 47);
 }
 
-/* Adjust properties of button */
-.btn
+/* Adjust properties of buttons */
+.search-button
 {
-    color: black;
+    background-color: rgb(47, 47, 47);
+    color: white;
     border-radius: 5px;
-    border: 2px solid black;
-    border-bottom: 5px solid;
+    border-bottom: 5px solid black;
+    font-size: 75%;
 }
 
-.btn:hover, .btn:focus
+.search-button:hover, .search-button:focus
 {
-    color: black;
-    background-color: rgb(160, 142, 69);
+    color: white;
+    background-color: black;
+}
+
+.logout-button
+{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid black;
+}
+
+.logout-button:hover, .logout-button:focus
+{
+    color: white;
+    background-color: black;
+}
+
+.add-button
+{
+    margin: 10px;
+    width: 96px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid darkgreen;
+}
+
+.add-button:hover, .add-button:focus
+{
+    color: white;
+    background-color: darkgreen;
+}
+
+.edit-button
+{
+    margin: 10px;
+    width: 96px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid darkblue;
+}
+
+.edit-button:hover, .edit-button:focus
+{
+    color: white;
+    background-color: darkblue;
+}
+
+.delete-button
+{
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid darkred;
+}
+
+.delete-button:hover, .delete-button:focus
+{
+    color: white;
+    background-color: darkred;
 }
 
 /* Add UCF Knights Font*/
@@ -39,5 +118,4 @@ body
 {
     font-family: ucffont;
     src: url(../fonts/ncaaucfknights.ttf);
-    font-size: 24px;
 }

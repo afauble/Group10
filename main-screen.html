@@ -22,26 +22,36 @@
     <body>
 
         
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-image: linear-gradient(to right, black, rgb(184, 164, 105)) ">
+        <nav class="navbar navbar-expand-md fixed-top" style="background-image: linear-gradient(to right, black, rgb(184, 164, 105)) ">
             <div class="container-fluid">
-                <!-- Heading with UCF Font for uppercase letters -->
-                <div class="ucf-heading">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <span style="font-family: ucffont; color: rgb(184, 164, 105); font-size: 50px">U</span><span>niversal</span>
-                            <span style="font-family: ucffont; color: rgb(184, 164, 105); font-size: 50px">&nbsp;C</span><span>ontact</span>
-                            <span style="font-family: ucffont; color: rgb(184, 164, 105); font-size: 50px">&nbsp;F</span><span>iling</span>
-                        </div>
-                    </div>
-                </div>
-
-                <input id="searchbar" type="text" placeholder="Search...">
-
-                <img src="images/knightface.png" style="width: 2%; margin-right: 1000px;">
-
-                <button type="submit" class="btn"><i class="fas fa-sign-in-alt"></i> Log Out</button>
+                <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="fas fa-ellipsis-v" style="color: black"></i></a>
+                
+               
+                <form>
+                    <input id="searchbar" type="text" class="nav-item" placeholder="Search...">
+                    <button type="submit" class="btn nav-item search-button"><i class="fas fa-search"></i></button>
+                </form>
+                
+                
+                <button type="submit" class="btn nav-item logout-button"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+             
+                
+                
             </div>
         </nav>
+
+        <!-- Heading with UCF Font for uppercase letters -->
+        <div class="ucfheading">
+            <span class="ucftext">U</span><span class="normaltext">niversal</span>&nbsp;&nbsp;
+            <span class="ucftext">C</span><span class="normaltext">ontact</span>&nbsp;&nbsp;
+            <span class="ucftext">F</span><span class="normaltext">iling</span>
+        </div>
+       
+        <button class="btn add-button"><i class="fas fa-plus"></i> ADD</button><br>
+        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button><br>
+        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button><br>
+
+        
 
     </body>
 </html>
