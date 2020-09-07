@@ -1,0 +1,195 @@
+/* Adjust properties of the body*/
+body 
+{
+    background: url(../images/background.png) no-repeat bottom right fixed;   
+    background-size: cover;
+    color: white; /* Dark Mode by default */
+}
+
+/* Adjust properties of the heading */
+.ucfheading
+{
+    text-align: center;
+    background-color: rgb(47, 47, 47);
+    margin-top: 58px;
+}
+
+.ucftext
+{
+    font-family: ucffont; 
+    color: rgb(184, 164, 105); 
+    font-size: 50px;
+}
+
+.normaltext
+{
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+
+/* adjust properties of the search bar */
+#searchbar
+{
+    color: white; 
+    background-color: rgb(47, 47, 47); 
+    border:rgb(47, 47, 47);
+    width: 300px;
+}
+
+.search-bar-form
+{
+    width: 350px;
+}
+/* Adjust properties of buttons */
+.search-button
+{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid black;
+}
+
+.search-button:hover, .search-button:focus
+{
+    color: white;
+    background-color: black;
+}
+
+.logout-button
+{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid black;
+}
+
+.logout-button:hover, .logout-button:focus
+{
+    color: white;
+    background-color: black;
+}
+
+/*.sidenav
+{
+    padding-left: 30px;
+    width: 150px;
+}*/
+
+.add-button
+{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 96px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid darkgreen;
+}
+
+.add-button:hover, .add-button:focus
+{
+    color: white;
+    background-color: darkgreen;
+}
+
+.edit-button
+{
+    margin: 10px;
+    width: 96px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid darkblue;
+}
+
+.edit-button:hover, .edit-button:focus
+{
+    color: white;
+    background-color: darkblue;
+}
+
+.delete-button
+{
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid darkred;
+}
+
+.delete-button:hover, .delete-button:focus
+{
+    color: white;
+    background-color: darkred;
+}
+
+table
+{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+th, td 
+{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tb-ln
+{
+    background-color: rgb(141, 125, 79);
+    color: white;
+}
+
+.tb-fn
+{
+    background-color: black;
+    color: white;
+}
+
+.tb-date
+{
+    background-color: rgb(141, 125, 79);
+    color: white;
+}
+
+.tb-email
+{
+    background-color: black;
+    color: white;
+}
+
+.tb-addr
+{
+    background-color: rgb(141, 125, 79);
+    color: white;
+}
+
+.tb-edit
+{
+    background-color: black;
+    color: white;
+}
+
+.tb-delete
+{
+    background-color: black;
+    color: white;
+}
+
+.tb-blank
+{
+    border: none;
+    border-collapse: none;
+}
+
+/* Add UCF Knights Font*/
+@font-face
+{
+    font-family: ucffont;
+    src: url(../fonts/ncaaucfknights.ttf);
+}
