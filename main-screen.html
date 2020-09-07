@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Universal-Contact-Filing</title>
+        <link rel="icon" href="images/knighticon.png">
       
         <!-- Bootstrap css -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -24,10 +25,10 @@
         
         <nav class="navbar navbar-expand-md fixed-top" style="background-image: linear-gradient(to right, black, rgb(184, 164, 105)) ">
             <div class="container-fluid">
-                <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="fas fa-ellipsis-v" style="color: black"></i></a>
+                
                 
                
-                <form>
+                <form class="search-bar-form">
                     <input id="searchbar" type="text" class="nav-item" placeholder="Search...">
                     <button type="submit" class="btn nav-item search-button"><i class="fas fa-search"></i></button>
                 </form>
@@ -40,16 +41,175 @@
             </div>
         </nav>
 
+        <div class="fixed-top">
+            <div class="container-fluid">
         <!-- Heading with UCF Font for uppercase letters -->
-        <div class="ucfheading">
-            <span class="ucftext">U</span><span class="normaltext">niversal</span>&nbsp;&nbsp;
-            <span class="ucftext">C</span><span class="normaltext">ontact</span>&nbsp;&nbsp;
-            <span class="ucftext">F</span><span class="normaltext">iling</span>
+                <div class="ucfheading">
+                    <span class="ucftext">U</span><span class="normaltext">niversal</span>&nbsp;&nbsp;
+                    <span class="ucftext">C</span><span class="normaltext">ontact</span>&nbsp;&nbsp;
+                    <span class="ucftext">F</span><span class="normaltext">iling</span>
+                    <button class="btn add-button"><i class="fas fa-plus"></i> ADD</button>
+                </div>
+            </div>
         </div>
        
-        <button class="btn add-button"><i class="fas fa-plus"></i> ADD</button><br>
-        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button><br>
-        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button><br>
+        <!--<div class="sidenav">
+            <button class="btn add-button"><i class="fas fa-plus"></i> ADD</button>
+            <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button>
+            <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+        </div>-->
+
+        <!--
+        <div class="main">
+            <table>
+                <th> Last Name </th>
+                <th> First Name </th>
+                <th> Email Address </th>
+                <th> Phone Number </th>
+                <th> Date Created </th>
+                <th><button class="btn add-button"><i class="fas fa-plus"></i> ADD</button></th>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button></td>
+                    <td><button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button></td>
+                </tr>
+            </table>
+        </div>-->
+
+        <div>
+            <table>
+                <tr>
+                    <td class="tb-ln">Sample</td>
+                    <td class="tb-email">Sample@Sample.com</td>
+                    <td class="tb-date">01/01/1970</td>
+                </tr>
+                <tr>
+                    <td class="tb-fn">Sample</td>
+                    <td class="tb-addr">1234 NW 56th St.</td>
+                    <td class="tb-delete">
+                        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button>
+                        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+                    </td>
+                </tr>
+                <td class="tb-blank" colspan="3"><br></td>
+                <tr>
+                    <td class="tb-ln">Sample</td>
+                    <td class="tb-email">Sample@Sample.com</td>
+                    <td class="tb-date">01/01/1970</td>
+                </tr>
+                <tr>
+                    <td class="tb-fn">Sample</td>
+                    <td class="tb-addr">1234 NW 56th St.</td>
+                    <td class="tb-delete">
+                        <button class="btn edit-button"><i class="fas fa-edit"></i> </button>
+                        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+                    </td>
+                </tr>
+                <td class="tb-blank" colspan="3"><br></td>
+                <tr>
+                    <td class="tb-ln">Sample</td>
+                    <td class="tb-email">Sample@Sample.com</td>
+                    <td class="tb-date">01/01/1970</td>
+                </tr>
+                <tr>
+                    <td class="tb-fn">Sample</td>
+                    <td class="tb-addr">1234 NW 56th St.</td>
+                    <td class="tb-delete">
+                        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button>
+                        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+                    </td>
+                </tr>
+                <td class="tb-blank" colspan="3"><br></td>
+                <tr>
+                    <td class="tb-ln">Sample</td>
+                    <td class="tb-email">Sample@Sample.com</td>
+                    <td class="tb-date">01/01/1970</td>
+                </tr>
+                <tr>
+                    <td class="tb-fn">Sample</td>
+                    <td class="tb-addr">1234 NW 56th St.</td>
+                    <td class="tb-delete">
+                        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button>
+                        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+                    </td>
+                </tr>
+                <td class="tb-blank" colspan="3"><br></td>
+                <tr>
+                    <td class="tb-ln">Sample</td>
+                    <td class="tb-email">Sample@Sample.com</td>
+                    <td class="tb-date">01/01/1970</td>
+                </tr>
+                <tr>
+                    <td class="tb-fn">Sample</td>
+                    <td class="tb-addr">1234 NW 56th St.</td>
+                    <td class="tb-delete">
+                        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button>
+                        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+                    </td>
+                </tr>
+                <td class="tb-blank" colspan="3"><br></td>
+                <tr>
+                    <td class="tb-ln">Sample</td>
+                    <td class="tb-email">Sample@Sample.com</td>
+                    <td class="tb-date">01/01/1970</td>
+                </tr>
+                <tr>
+                    <td class="tb-fn">Sample</td>
+                    <td class="tb-addr">1234 NW 56th St.</td>
+                    <td class="tb-delete">
+                        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button>
+                        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+                    </td>
+                </tr>
+                <td class="tb-blank" colspan="3"><br></td>
+                <tr>
+                    <td class="tb-ln">Sample</td>
+                    <td class="tb-email">Sample@Sample.com</td>
+                    <td class="tb-date">01/01/1970</td>
+                </tr>
+                <tr>
+                    <td class="tb-fn">Sample</td>
+                    <td class="tb-addr">1234 NW 56th St.</td>
+                    <td class="tb-delete">
+                        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button>
+                        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+                    </td>
+                </tr>
+                <td class="tb-blank" colspan="3"><br></td>
+                <tr>
+                    <td class="tb-ln">Sample</td>
+                    <td class="tb-email">Sample@Sample.com</td>
+                    <td class="tb-date">01/01/1970</td>
+                </tr>
+                <tr>
+                    <td class="tb-fn">Sample</td>
+                    <td class="tb-addr">1234 NW 56th St.</td>
+                    <td class="tb-delete">
+                        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button>
+                        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+                    </td>
+                </tr>
+                <td class="tb-blank" colspan="3"><br></td>
+                <tr>
+                    <td class="tb-ln">Sample</td>
+                    <td class="tb-email">Sample@Sample.com</td>
+                    <td class="tb-date">01/01/1970</td>
+                </tr>
+                <tr>
+                    <td class="tb-fn">Sample</td>
+                    <td class="tb-addr">1234 NW 56th St.</td>
+                    <td class="tb-delete">
+                        <button class="btn edit-button"><i class="fas fa-edit"></i> EDIT</button>
+                        <button class="btn delete-button"><i class="fas fa-trash-alt"></i> DELETE</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
 
         
 
