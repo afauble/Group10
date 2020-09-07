@@ -3,10 +3,24 @@ ul {
 }
 
 .CreateContactForm{
-    display: inline-block;
+    display: block;
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+}
+
+button {
+    right: 0px;
+}
+
 header {
-    margin-left: 20px;
+    display: block;
+    text-align: center;
+}
+
+.login{
+    display: inline;
+    text-align: center;
 }

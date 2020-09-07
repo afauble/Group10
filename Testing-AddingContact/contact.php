@@ -1,17 +1,29 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION['loggedin'])) {
+    header('Location: index.html');
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Contact</title>
-    <link rel="icon" type="image/png" href="contact.png">
+    <title>Add Contact Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/contact.png">
 </head>
+<body>
 <header>
-    <h1>Create a Contact</h1>
+    <h1>Contact System</h1>
+    <a href="logout.php" id = "lout">Log Out</a>
 </header>
 
-<body>
+<main>
 <div class = "CreateContactForm">
     <ul>
         <li><input type="text" name="fname" placeholder="First Name"></li>
@@ -23,6 +35,6 @@
     <button type="button">Create Contact</button>
     <button type="button">Cancel</button>
 </div>
-
+</main>
 </body>
 </html>
