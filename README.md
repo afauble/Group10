@@ -1,4 +1,4 @@
-# Testing Branch for Group10 - Process of Object Oriented Software @ UCF
+# Testing Branch for Group 10 @ UCF
 
 ### Commit 1: 
     - Create repository, initalize w/ default readMe
@@ -8,7 +8,7 @@
     - Create a basic contact page in php
 
 ### Commit 3:
-    ** Database: **
+    **Database:**
         - Set up XAMPP server to host locally
         - Create and setup database - 'dummytrial'
         - Create 'accounts' table for the database
@@ -16,8 +16,8 @@
             - uid
             - pwd 
         - Insert a 'test' user
-
-    ** Backend **
+        
+     **Backend**
         - Test login fields if uid && pwd exists
         - Login links to contact page
         - Hash pwd 
