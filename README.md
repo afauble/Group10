@@ -8,17 +8,19 @@
     - Create a basic contact page in php
 
 ### Commit 3:
-    **Database:**
+   **Database:**
+   
         - Set up XAMPP server to host locally
         - Create and setup database - 'dummytrial'
         - Create 'accounts' table for the database
-            - id
-            - uid
-            - pwd 
+          - id
+          - uid
+          - pwd 
         - Insert a 'test' user
         
-     **Backend**
-        - Test login fields if uid && pwd exists
-        - Login links to contact page
-        - Hash pwd 
-        - Prevent SQL injection
+   **Backend**
+       
+       - Test login fields if uid && pwd exists
+       - Login links to contact page
+       - Hash pwd 
+       - Prevent SQL injection
