@@ -1,0 +1,9 @@
+git branch -r (shows available remote branches)
+
+git fetch origin (needed to switch branch) - fetches remote branches
+
+git pull (checks that local is up to date)
+
+git status (check my status)
+
+git checkout -b <branchname> origin/<branchname> (move to different reposit
