@@ -1,0 +1,112 @@
+<!-- EDIT THE HTML WITHIN THE FOLLOWING: (if there are contacts, make sure any HTML is also contained in a <table> element within this <div>) -->
+
+     <div id="dvTable">
+           
+    </div>
+
+
+
+<!-- (A) Display The Current Contacts -->
+    <!-- 1. For Each Contact, Use The Below HTML, Replace The Text Between The * * With The Appropriate Data -->
+    <!-- 2. Concatenate The HTML For Each Contact And Add The Full HTML String To The Above Element -->
+
+        <!-- Image A In The Discord -->
+        <tr>
+            <td class="tb-fn">*FirstName*</td>
+            <td class="tb-email">*EmailAddress*</td>
+            <td class="tb-date">*DateCreated*</td>
+        </tr>
+        <tr>
+            <td class="tb-ln">*LastName*</td>
+            <td class="tb-addr">*StreetAddress*</td>
+            <td class="tb-delete">
+                <button class="btn edit-button"><i class="fas fa-edit"></i></button>
+                <button class="btn delete-button"><i class="fas fa-trash-alt"></i></button> 
+            </td>
+        </tr>
+        <td class="tb-blank" colspan="3"><br></td>
+
+        
+
+<!-- (B) When Green Add Button Is Pressed -->
+    <!-- 1. Remove The HTML Within The <div> (These are the current contacts) -->
+    <!-- 2. Replace That HTML With The Following (So only the potential new contact is displayed) -->
+    <!-- 3. Replace The Text Between The * * With The Date (and maybe time) That The Add Button Was Pushed -->
+        
+        <!-- Image B In The Discord -->
+        <form>
+            <tr>
+                <td class="tb-fn"><input class="fill-in" type="text" placeholder="First Name"></td>
+                <td class="tb-email"><input class="fill-in" type="text" placeholder="Email Address"></td>
+                <td class="tb-date">*DateCreated*</td>
+            </tr>
+            <tr>
+                <td class="tb-ln"><input class="fill-in" type="text" placeholder="Last Name"></td>
+                <td class="tb-addr"><input class="fill-in" type="text" placeholder="Street Address"></td>
+                <td class="tb-delete">
+                    <button type="submit" class="btn add-button-check"><i class="fas fa-check"></i></button>
+                </td>
+            </tr>
+        </form>
+        <td class="tb-blank" colspan="3"><br></td>
+    
+    <!-- When The Green Checkmark Is Pressed -->
+        <!-- 3. Get The Values From The Four Input Elements And Send Them To The Database (Maybe check if there are valid values there first) -->
+        <!-- 4. Remove The HTML Within The <div> (This is the new contact) -->
+        <!-- 5. Generate The New Contacts Using The Database Data And Display Them Using (A) -->
+
+
+    
+<!-- (C) When The Blue Edit Button Is Pressed -->
+    <!-- 1. Replace The Appropriate Contact's HTML With The Following: -->
+
+        <!-- Image C In The Discord -->
+        <form>
+            <tr>
+                <td class="tb-fn"><input class="fill-in" type="text" placeholder="First Name" value="FirstName"></td>
+                <td class="tb-email"><input class="fill-in" type="text" placeholder="Email Address" value="EmailAddress"></td>
+                <td class="tb-date">*DateCreated*</td>
+            </tr>
+            <tr>
+                <td class="tb-ln"><input class="fill-in" type="text" placeholder="Last Name" value="LastName"></td>
+                <td class="tb-addr"><input class="fill-in" type="text" placeholder="Street Address" value="StreetAddress"></td>
+                <td class="tb-delete">
+                    <button type="submit" class="btn edit-button"><i class="fas fa-check"></i></button>
+                    <button type="submit" class="btn delete-button-off" disabled><i class="fas fa-trash-alt"></i></button>
+                </td>
+            </tr>
+        </form>
+        <td class="tb-blank" colspan="3"><br></td>
+
+    <!-- 2. Replace Ever Other Contact's HTML With The Following: (the same contact but with the edit/delete buttons disabled) -->
+
+        <!-- Image D In The Discord -->
+        <tr>
+            <td class="tb-fn">FirstName</td>
+            <td class="tb-email">EmailAddress</td>
+            <td class="tb-date">DateCreated</td>
+        </tr>
+        <tr>
+            <td class="tb-ln">LastName</td>
+            <td class="tb-addr">StreetAddress</td>
+            <td class="tb-delete">
+                <button class="btn edit-button-off" disabled><i class="fas fa-edit"></i></button>
+                <button class="btn delete-button-off" disabled><i class="fas fa-trash-alt"></i></button>
+            </td>
+        </tr>
+        <td class="tb-blank" colspan="3"><br></td>
+
+    <!-- When The Blue Checkmark Is Pressed -->
+        <!-- 3. Get The Values From The Four Input Elements And Send Them To The Database (Maybe check if there are valid values there first) -->
+        <!-- 4. Remove All Of The HTML From The <div> -->
+        <!-- 5. Generate The New Contacts Using The Database Data And Display Them Using (A) -->
+
+
+
+<!-- (D) When The Red Delete Button Is Pressed -->
+    <!-- 1. Display An Alert Asking The User To Confirm If They Want To Delete -->
+    <!-- 2. If No Is Selected, Do Nothing. If Yes Is Selected, Do The Following: -->
+    <!-- 2. Remove The HTML For The Appropriate Contact -->
+    <!-- 3. Remove The Appropriate Contact From The Database -->
+
+

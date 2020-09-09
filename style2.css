@@ -39,6 +39,7 @@ body
 .search-bar-form
 {
     width: 350px;
+    margin-left: -3px;
 }
 /* Adjust properties of buttons */
 .search-button
@@ -79,7 +80,6 @@ body
 {
     margin-left: 10px;
     margin-bottom: 20px;
-    width: 96px;
     background-color: green;
     color: white;
     border-radius: 5px;
@@ -92,10 +92,23 @@ body
     background-color: darkgreen;
 }
 
+.add-button-check
+{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid darkgreen;
+}
+
+.add-button-check:hover, .add-button-check:focus
+{
+    color: white;
+    background-color: darkgreen;
+}
+
 .edit-button
 {
     margin: 10px;
-    width: 96px;
     background-color: blue;
     color: white;
     border-radius: 5px;
@@ -106,6 +119,20 @@ body
 {
     color: white;
     background-color: darkblue;
+}
+
+.edit-button-off
+{
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid darkblue;
+}
+
+.edit-button-off:hover, .edit-button-off:focus
+{
+    color: white;
 }
 
 .delete-button
@@ -123,6 +150,20 @@ body
     background-color: darkred;
 }
 
+.delete-button-off
+{
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid darkred;
+}
+
+.delete-button-off:hover, .delete-button-off:focus
+{
+    color: white;
+}
+
 table
 {
     margin-top: 150px;
@@ -135,17 +176,16 @@ th, td
 {
     border: 1px solid white;
     border-collapse: collapse;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 
-.tb-ln
+.tb-fn
 {
     background-color: rgb(141, 125, 79);
     color: white;
 }
 
-.tb-fn
+.tb-ln
 {
     background-color: black;
     color: white;
@@ -185,6 +225,13 @@ th, td
 {
     border: none;
     border-collapse: none;
+}
+
+.fill-in
+{
+    color: white; 
+    background-color: rgb(47, 47, 47); 
+    border:rgb(47, 47, 47);
 }
 
 /* Add UCF Knights Font*/
