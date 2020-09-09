@@ -24,7 +24,7 @@
 
         <div class="fixed-top">
             <div class="container-fluid">
-        <!-- Heading with UCF Font for uppercase letters -->
+        <!-- UCF Heading and Add Button-->
                 <div class="ucfheading">
                     <span class="ucftext">U</span><span class="normaltext">niversal</span>&nbsp;&nbsp;
                     <span class="ucftext">C</span><span class="normaltext">ontact</span>&nbsp;&nbsp;
@@ -34,108 +34,24 @@
             </div>
         </div>
 
-
+        <!-- Top Nav Bar with Search Bar and Log Out Button -->
         <nav class="navbar navbar-expand-md fixed-top" style="background-image: linear-gradient(to right, black, rgb(184, 164, 105)) ">
             <div class="container-fluid">
                 
-                
-               
                 <form class="search-bar-form">
                     <input id="searchbar" type="text" class="nav-item" placeholder="Search...">
                     <button type="submit" class="btn nav-item search-button"><i class="fas fa-search"></i></button>
                 </form>
                 
-                
                 <button type="submit" class="btn nav-item logout-button"><i class="fas fa-sign-out-alt"></i> Log Out</button>
              
-                
-                
             </div>
         </nav>
-
 
         <!-- Table Generates Here -->
         <div id="dvTable">
            
         </div>
-
-        <!-- Templates -->
-        
-        <table>
-            <!-- View Contact -->
-            <tr>
-                <td class="tb-fn">FirstName</td>
-                <td class="tb-email">EmailAddress</td>
-                <td class="tb-date">DateCreated</td>
-            </tr>
-            <tr>
-                <td class="tb-ln">LastName</td>
-                <td class="tb-addr">StreetAddress</td>
-                <td class="tb-delete">
-                    <button class="btn edit-button"><i class="fas fa-edit"></i></button>
-                    <button class="btn delete-button"><i class="fas fa-trash-alt"></i></button>
-                </td>
-            </tr>
-            <td class="tb-blank" colspan="3"><br></td>
-
-            <!-- Add Contact -->
-            <form>
-                <tr>
-                    <td class="tb-fn"><input class="fill-in" type="text" placeholder="First Name"></td>
-                    <td class="tb-email"><input class="fill-in" type="text" placeholder="Email Address"></td>
-                    <td class="tb-date">DateCreated</td>
-                </tr>
-                <tr>
-                    <td class="tb-ln"><input class="fill-in" type="text" placeholder="Last Name"></td>
-                    <td class="tb-addr"><input class="fill-in" type="text" placeholder="Street Address"></td>
-                    <td class="tb-delete">
-                        <button type="submit" class="btn add-button-check"><i class="fas fa-check"></i></button>
-                    </td>
-                </tr>
-            </form>
-            <td class="tb-blank" colspan="3"><br></td>
-
-            <!-- Edit Contact -->
-            <form>
-                <tr>
-                    <td class="tb-fn"><input class="fill-in" type="text" placeholder="First Name" value="FirstName"></td>
-                    <td class="tb-email"><input class="fill-in" type="text" placeholder="Email Address" value="EmailAddress"></td>
-                    <td class="tb-date">DateCreated</td>
-                </tr>
-                <tr>
-                    <td class="tb-ln"><input class="fill-in" type="text" placeholder="Last Name" value="LastName"></td>
-                    <td class="tb-addr"><input class="fill-in" type="text" placeholder="Street Address" value="StreetAddress"></td>
-                    <td class="tb-delete">
-                        <button type="submit" class="btn edit-button"><i class="fas fa-check"></i></button>
-                        <button type="submit" class="btn delete-button-off" disabled><i class="fas fa-trash-alt"></i></button>
-                    </td>
-                </tr>
-            </form>
-            <td class="tb-blank" colspan="3"><br></td>
-
-            <!-- View Contact While Other Is Being Edited -->
-            <tr>
-                <td class="tb-fn">FirstName</td>
-                <td class="tb-email">EmailAddress</td>
-                <td class="tb-date">DateCreated</td>
-            </tr>
-            <tr>
-                <td class="tb-ln">LastName</td>
-                <td class="tb-addr">StreetAddress</td>
-                <td class="tb-delete">
-                    <button class="btn edit-button-off" disabled><i class="fas fa-edit"></i></button>
-                    <button class="btn delete-button-off" disabled><i class="fas fa-trash-alt"></i></button>
-                </td>
-            </tr>
-            <td class="tb-blank" colspan="3"><br></td>
-
-        </table>
-        
-        
-        <!---->
-        
-
-        
 
     </body>
 </html>
