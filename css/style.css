@@ -1,0 +1,82 @@
+/* Adjust properties of the body*/
+body 
+{
+    background: url(../images/background.png) no-repeat bottom right fixed;   
+    background-size: cover;
+    color: white; /* Dark Mode by default */
+}
+
+/* TODO: implement light mode toggle*/
+/* .light-mode
+{
+    color: black;
+}
+*/
+
+/* Adjust properties of the heading */
+.ucf-heading
+{
+    font-family: "Times New Roman", serif;
+    margin-top: 15px;
+    margin-bottom: -120px;
+}
+
+.row
+{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -47px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adjust properties of the login box */
+.login-box
+{
+    margin: 0 auto;
+    margin-top: 130px;
+    padding: 0;
+}
+
+.modal-content 
+{
+    background-color: rgb(184, 164, 105);
+    opacity: 0.95;
+    padding: 0 18px;
+    box-shadow: 0px 0px 4px black;
+}
+
+
+/* Adjust properties of the bottons */
+.btn
+{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border-bottom: 5px solid black;
+
+}
+
+.btn:hover, .btn:focus
+{
+    color: white;
+    background-color: black;
+}
+
+/* Adjust properties of the Knightro Face */
+.knight-face img
+{
+    width: 50%;
+    margin: 20px 81px 20px;
+}
+
+
+/* Add UCF Knights Font*/
+@font-face
+{
+    font-family: ucffont;
+    src: url(../fonts/ncaaucfknights.ttf);
+    font-size: 24px;
+}
+

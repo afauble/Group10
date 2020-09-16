@@ -1,0 +1,13 @@
+[04-Sep-2020 22:01:37 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'POOPTEN'@'localhost' (using password: YES) in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 9
+[09-Sep-2020 00:52:17 UTC] PHP Warning:  A non-numeric value encountered in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 16
+[09-Sep-2020 00:52:17 UTC] PHP Warning:  A non-numeric value encountered in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 16
+[09-Sep-2020 00:52:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cop4331group10/public_html/LAMPAPI/Login.php:16) in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 40
+[09-Sep-2020 00:52:58 UTC] PHP Warning:  A non-numeric value encountered in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 16
+[09-Sep-2020 00:52:58 UTC] PHP Warning:  A non-numeric value encountered in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 16
+[09-Sep-2020 00:52:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cop4331group10/public_html/LAMPAPI/Login.php:16) in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 40
+[09-Sep-2020 00:54:24 UTC] PHP Warning:  A non-numeric value encountered in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 16
+[09-Sep-2020 00:54:24 UTC] PHP Warning:  A non-numeric value encountered in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 16
+[09-Sep-2020 00:54:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cop4331group10/public_html/LAMPAPI/Login.php:16) in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 40
+[09-Sep-2020 01:04:46 UTC] PHP Parse error:  syntax error, unexpected ''}'' (T_CONSTANT_ENCAPSED_STRING) in /home/cop4331group10/public_html/LAMPAPI/Login.php on line 45
+[09-Sep-2020 19:00:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cop4331group10/public_html/LAMPAPI/Register.php:32) in /home/cop4331group10/public_html/LAMPAPI/Register.php on line 31
+[10-Sep-2020 17:54:25 UTC] PHP Parse error:  syntax error, unexpected '"' ,  contactPhoneNumber='"' (T_CONSTANT_ENCAPSED_STRING) in /home/cop4331group10/public_html/LAMPAPI/UpdateContact.php on line 16
