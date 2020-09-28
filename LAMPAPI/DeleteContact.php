@@ -9,7 +9,7 @@
 	}
 	else
 	{
-		$sql = "DELETE FROM contactInfo where ID='" . $inData["id"] . "'";
+		$sql = "DELETE FROM contactInfo where ID='" . $inData["ID"] . "'";
 		$result = $conn->query($sql);
 		if ($result === TRUE)
 		{
