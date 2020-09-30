@@ -3,15 +3,9 @@ body
 {
     background: url(../images/background.png) no-repeat bottom right fixed;   
     background-size: cover;
-    color: white; /* Dark Mode by default */
+    color: white;
 }
 
-/* TODO: implement light mode toggle*/
-/* .light-mode
-{
-    color: black;
-}
-*/
 
 /* Adjust properties of the heading */
 .ucf-heading
@@ -46,6 +40,11 @@ body
     box-shadow: 0px 0px 4px black;
 }
 
+#resp
+{
+    color: black;
+}
+
 #username
 {
     color: white;
@@ -62,10 +61,34 @@ body
     margin: 10px 0px;
 }
 
+#confirmPassword
+{
+    color: white;
+    background-color: rgb(47, 47, 47);
+    border:rgb(47, 47, 47);
+    margin: 10px 0px;
+}
+
+.field-icon {
+  float: right;
+  margin-left: 100px;
+  margin-top: -40px;
+  position: absolute;
+  z-index: 2;
+}
+
+#pcd {
+  float: right;
+  margin-left: 100px;
+  margin-top: -40px;
+  position: absolute;
+  z-index: 2;
+}
+
 .checkbox-class 
 {
     font-family: ucffont;
-    color:rgb(47, 47, 47);
+    color: black;
     font-size: 15px;
 
 }
