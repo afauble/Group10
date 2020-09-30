@@ -68,14 +68,17 @@
             <div  class="form-group">
               <input type="text" name="username" id="username" required class="form-control" placeholder="Enter Username" style="color: white; background-color: rgb(47, 47, 47); border:rgb(47, 47, 47)">
             </div>
-
+            
             <!-- Password -->
             <div  class="form-group">
-              <input type="password" name="password" id="password" required class="form-control" placeholder="Enter Password" style="color: white; background-color: rgb(47, 47, 47); border:rgb(47, 47, 47)">
+              <input type="password" name="password" id="password" required class="form-control" placeholder="Enter Password">
             </div>
             
+            <!-- Eye Password Icon -->
+            <span toggle="#password" id = "pwd" class="fa fa-fw fa-eye field-icon pwd"></span>
+            
              <div class = "checkbox-class">
-                <input type="checkbox" id="remember"> Remember Me?</input>
+                <input type="checkbox" id="remember"> Remember Me</input>
               </div>
           
             <p id="resp"></p>
