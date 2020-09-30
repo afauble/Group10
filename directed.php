@@ -72,15 +72,16 @@ if(isset($_POST['loggedIN'])) {
         <table>
             <form>
                 <tr>
-                    <td class="tb-fn"><input class="fill-in" type="text" placeholder="First Name" id="fn" name="firstNameInput" ></td>
-                    <td class="tb-email"><input class="fill-in" type="text" placeholder="Email Address" id="em" name="emailAddressInput" ></td>
+                    <td class="tb-fn"><input class="fill-in" type="text" placeholder="e.g. John" id="fn" name="firstNameInput" ></td>
+                    <td class="tb-email"><input class="fill-in" type="text" placeholder="e.g. JohnSmith@ucf.com" id="em" name="emailAddressInput"></td>
                     <td class="tb-date">DateCreated</td>
                 </tr>
                 <tr>
-                    <td class="tb-ln"><input class="fill-in" type="text" placeholder="Last Name" id="ln" name="lastNameInput"></td>
-                    <td class="tb-addr"><input class="fill-in" type="text" placeholder="Phone-Number" id="pn" name="phoneNumber"></td>
+                    <td class="tb-ln"><input class="fill-in" type="text" placeholder="e.g. Smith" id="ln" name="lastNameInput" ></td>
+                    <td class="tb-addr"><input class="fill-in" type="text" placeholder="e.g. 824-532-0932" id="pn" name="phoneNumber"></td>
                     <td class="tb-delete">
-                        <button type="submit" class="btn add-button-check" onclick="addContacts()" id="addContact"><i class="fas fa-check"></i></button>
+                       <!-- <button type="submit" class="btn add-button-check" onclick="addContacts()" id="addContact"><i class="fas fa-check"></i></button> -->
+                       <button type="btn" class="btn add-button-check" onclick="addContacts()" id="addContact"><i class="fas fa-check"></i></button> 
                     </td>
                 </tr>
             </form>
