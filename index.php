@@ -72,7 +72,18 @@
             <div  class="form-group">
               <input type="password" name="password" id="password" required class="form-control" placeholder="Enter Password">
             </div>
-
+            
+            <!-- Eye Password Icon -->
+            <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            
+            <!-- Confirmation Password -->
+            <div  class="form-group">
+              <input type="password" name="confirmPassword"  id="confirmPassword" required class="form-control" placeholder="Confirm Password">
+            </div>
+            
+            <!-- Eye Password Icon -->
+            <span toggle="#confirmPassword" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            
             <p id="resp"></p>
 
             <!-- Login Buttons -->
