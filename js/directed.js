@@ -14,20 +14,25 @@ function addContacts() {
   var email = document.getElementById("em").value;
   var phoneNumber = document.getElementById("pn").value;
 
-  var jsonData = JSON.stringify({"firstName": firstName, "lastName": lastName, "email": email, "phoneNumber": phoneNumber, "uid": uid});
+    var jsonData = JSON.stringify({"firstName": firstName, "lastName": lastName, "email": email, "phoneNumber": phoneNumber, "uid": uid});
 
-  $.ajax({
-    url: 'LAMPAPI/AddContact.php',
-    method: 'POST',
-    dataType: 'json',
-    data: jsonData,
-    contentType:'application/json',
-    success: function(result)
-    {
-      //(result);
-    },
-    error: function(xhr, ajaxOptions, thrownError)
-    {
+     $.ajax({
+      url: 'LAMPAPI/AddContact.php',
+       method: 'POST',
+       dataType: 'json',
+       data: jsonData,
+       contentType:'application/json',
+        
+      success: function(result) {
+          if(response.indexOf('success') >= 0) {
+            //closeTable();
+            searchForContacts();
+          }
+          else {
+            //(result);
+          }
+      },
+      error: function(xhr, ajaxOptions, thrownError) {
         if(xhr.status == 200) {
 
         }
@@ -59,6 +64,8 @@ $(document).ready(function()
       alert(thrownError);
     }
   });
+  
+     //setInterval(searchForContacts, 1250);
 
   $('#searchbtn').on('click', function(){
     searchForContacts();
@@ -128,11 +135,16 @@ function editContact(contactID)
   for (var i = 0, len = buttons.length; i < len; i++)
   {
     buttons[i].disabled = true;
+    if (buttons[i].className == "btn edit-button")
+      buttons[i].className = "btn edit-button-off";
+    else if (buttons[i].className == "btn delete-button")
+      buttons[i].className = "btn delete-button-off";
   }
   var id = 'contact'+contactID+"row1";
   var row = document.getElementById(id)
   cells = row.getElementsByTagName('td');
-  var ihtml = '<form><td class="tb-fn"><input id="firstNameInput" class="fill-in" type="text" placeholder="First Name" value="'+cells[0].innerHTML+'"></td> \
+  
+   var ihtml = '<form><td class="tb-fn"><input id="firstNameInput" class="fill-in" type="text" placeholder="First Name" value="'+cells[0].innerHTML+'"></td> \
   <td class="tb-email"><input id="emailAddressInput" class="fill-in" type="text" placeholder="Email Address" value="'+cells[1].innerHTML+'"></td> \
   <td class="tb-date">'+cells[2].innerHTML+'</td></form>';
 
@@ -145,6 +157,22 @@ function editContact(contactID)
       <button type="button" class="btn edit-button" onclick="updateContact('+contactID+')"><i class="fas fa-check"></i></button> \
       <button type="button" class="btn delete-button-off" disabled><i class="fas fa-trash-alt"></i></button> \
   </td></form>';
+  
+/*var ihtml = '<form><td class="tb-fn"><input id="firstNameInput" class="fill-in" type="text" placeholder="First Name"  value="'+cells[0].innerHTML+'"></td>\
+  <td class="tb-ln"><input id="lastNameInput" class="fill-in" type="text" placeholder="Last Name"  value="'+cells[1].innerHTML+'"></td>\
+  <td class="tb-date">'+cells[2].innerHTML+'</td></form>';
+
+  var id2 ='contact'+contactID+"row2";
+  var row2 = document.getElementById(id2)
+  cells2 = row2.getElementsByTagName('td');
+  
+  
+  var ihtml2 = '<form><td class="tb-email"><input id="emailAddressInput" class="fill-in" type="text" placeholder="Email Address"  value="'+cells2[0].innerHTML+'"></td> \
+  <td class="tb-addr"><input id="phoneNumberInput" class="fill-in" type="text" placeholder="Phone Number" value="'+cells2[1].innerHTML+'"></td> \
+  <td class="tb-delete"> \
+      <button type="button" class="btn edit-button" onclick="updateContact('+contactID+')"><i class="fas fa-check"></i></button> \
+      <button type="button" class="btn delete-button-off" disabled><i class="fas fa-trash-alt"></i></button> \
+  </td></form>';*/
   row.innerHTML = ihtml;
   row2.innerHTML = ihtml2;
 }
