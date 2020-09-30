@@ -2,7 +2,7 @@
     session_start();
     unset($_SESSION["id"]);
     unset($_SESSION["username"]);
-    header("location: ../index.php?logout=true");
+    header("location: ../logging.php?logout=true");
     exit();
 
 ?>
