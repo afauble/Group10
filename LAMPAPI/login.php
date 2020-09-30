@@ -11,7 +11,7 @@ if(isset($_POST['login'])) {
     $conn = new mysqli('localhost', 'cop4331g_POOPTEN', '7[DaQeU,awcw', 'cop4331g_COP4331_Group_10');
     //Sanitize the username and password fields, for safety in database
     $user = $conn->real_escape_string($_POST['userPHP']);
-    $pass = md5($conn->real_escape_string($_POST['passPHP']));
+    $pass = $conn->real_escape_string($_POST['passPHP']);
     //Search the username and password in database
     $data = $conn->query("SELECT ID FROM loginInfo WHERE username='$user' AND password='$pass'");
 
