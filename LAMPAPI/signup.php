@@ -11,7 +11,7 @@ if(isset($_POST['login'])) {
 
     //Sanitize the username and password fields, for safety in database
     $user = $conn->real_escape_string($_POST['userPHP']);
-    $pass = md5($conn->real_escape_string($_POST['passPHP']));
+    $pass = $conn->real_escape_string($_POST['passPHP']);
 
     //Search the usernames in database
     $data = $conn->query("SELECT ID FROM loginInfo WHERE username='$user'");
